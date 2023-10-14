@@ -1,5 +1,3 @@
-Certainly! Here's a shorter and more concise version of your coffee shop description suitable for a GitHub README:
-
 # Aroma Haven Café
 
 Welcome to Aroma Haven Café, your ultimate coffee destination!

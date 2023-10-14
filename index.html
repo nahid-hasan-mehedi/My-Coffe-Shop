@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="top-section">
+    <h1><div class="coffee-shop-name" id="coffee-shop-name">Aroma Haven Café by Nahid     </div>
+    </h1>
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+    </div>
+
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  .menu-bar {
+    background-color: rgb(74, 51, 51);
+    color: rgb(110, 85, 85);
+    text-align: center;
+    padding: 10px;
+  }
+
+  #menu-button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: rgb(227, 216, 216);
+    font-size: 18px;
+  }
+
+  .menu-options {
+    display: none;
+  }
+
+  .menu-options a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(81, 51, 51);
+    background-color: rgb(228, 221, 221);
+    transition: background-color 0.3s;
+  }
+
+  .menu-options a:hover {
+    background-color: #555;
+  }
+</style>
+<body>
+  <div class="menu-bar">
+    <button id="menu-button">Menu</button>
+    <div class="menu-options" id="menu-options">
+      <a href="coffe.html">Coffee Selection</a>
+      <a href="#">Pastries</a>
+      <a href="#">Sandwiches</a>
+      <a href="#">Tea Selection</a>
+
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+  const menuButton = document.getElementById("menu-button");
+  const menuOptions = document.getElementById("menu-options");
+
+  menuButton.addEventListener("click", function () {
+    menuOptions.style.display = menuOptions.style.display === "block" ? "none" : "block";
+  });
+});
+
+
+
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>

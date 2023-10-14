@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+    /* Your existing CSS remains the same */
+
+.coffee-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+</style>
+
+
+<body>
+    <div class="menu">
+        <h1>Coffee Menu</h1>
+        <div class="coffee-list">
+            <div class="coffee-item" style="background-color: #ffee58;">
+                <h2>Classic Espresso</h2>
+                <p>Rich, intense, and full-bodied. The perfect shot of pure espresso.</p>
+            </div>
+            <div class="coffee-item" style="background-color: #ffa726;">
+                <h2>Double Espresso</h2>
+                <p>A double shot of our classic espresso for the true coffee aficionado.</p>
+            </div>
+            <div class="coffee-item" style="background-color: #66bb6a;">
+                <h2>Cappuccino</h2>
+                <p>Equal parts of espresso, steamed milk, and milk foam. A classic favorite.</p>
+            </div>
+            <div class="coffee-item" style="background-color: #42a5f5;">
+                <h2>Mocha</h2>
+                <p>Espresso, steamed milk, and chocolate. Topped with whipped cream.</p>
+            </div>
+            <div class="coffee-item" style="background-color: #ff7043;">
+                <h2>Chai Tea Latte</h2>
+                <p>Spiced chai tea with steamed milk.</p>
+            </div>
+            <div class="coffee-item" style="background-color: #ab47bc;">
+                <h2>Latte</h2>
+                <p>Espresso with steamed milk, topped with a creamy milk foam.</p>
+            </div>
+            <!-- Add more coffee items here -->
+        </div>
+    </div>
+
+  <script>
+    const coffeeItems = document.querySelectorAll('.coffee-item');
+
+coffeeItems.forEach(item => {
+    item.addEventListener('click', () => {
+        coffeeItems.forEach(otherItem => otherItem.classList.remove('selected'));
+        item.classList.add('selected');
+    });
+});
+
+  </script>
+
+
+    <script src="script.js" defer></script>
+</body>
+</html>
